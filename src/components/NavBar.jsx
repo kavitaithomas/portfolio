@@ -14,12 +14,12 @@ const NavBar = () => {
   return (
     <div className="flex justify-center items-center">
       {/* md and up NavBar */}
-      <div className="hidden md:flex justify-center items-center w-2/3 h-10 px-16 text-white bg-dark-purple bg-opacity-70 rounded-3xl">
+      <div className="hidden md:flex justify-center items-center mt-36 w-2/3 h-10 px-16 text-white bg-dark-purple bg-opacity-90 rounded-3xl fixed">
         <ul className="flex justify-between items-center w-full">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="text-base px-4 hover:scale-95 duration-200 cursor-pointer"
+              className="text-base font-normal px-4 hover:scale-125 duration-200 cursor-pointer"
             >
               {link}
             </li>
@@ -30,7 +30,7 @@ const NavBar = () => {
       {/* Mobile hamburger NavBar */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer text-my-gray p-4 md:hidden"
+        className="cursor-pointer text-my-gray p-4 md:hidden z-50"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
