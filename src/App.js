@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div>
+    <div className=" h-screen bg-darkest-purple">
       <NavBar />
     </div>
   );
