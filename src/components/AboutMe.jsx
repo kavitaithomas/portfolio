@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="flex flex-col md:mt-32 md:flex-row justify-center items-center md:items-start md:space-x-10">
       {/* Headshot */}
-      <div className="my-10 md:my-0 md:mr-8 rounded-full w-96 h-96 overflow-hidden">
+      <div className="md:mr-8 rounded-full w-96 h-96 overflow-hidden">
         <img
           src={headshot}
           alt="Kavita Thomas Headshot"
@@ -14,7 +14,7 @@ const AboutMe = () => {
       </div>
 
       {/* About Me text */}
-      <div className="text-my-gray max-w-lg text-left">
+      <div className="text-my-gray max-w-lg text-left md:text-xl">
         <p className="my-4">
           I am a fourth year computing student graduating in Spring 2025 at
           Queen’s University in Kingston, Ontario. I have a specific interest in
