@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-center items-center">
       {/* md and up NavBar */}
-      <div className="hidden md:flex justify-center items-center mt-36 w-2/3 h-10 px-16 text-white bg-dark-purple bg-opacity-90 rounded-3xl fixed">
+      <div className="hidden md:flex justify-center items-center mt-36 w-2/3 h-10 px-16 text-white bg-dark-purple rounded-3xl absolute">
         <ul className="flex justify-between items-center w-full">
           {links.map(({ id, link }) => (
             <li

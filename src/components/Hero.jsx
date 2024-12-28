@@ -7,7 +7,11 @@ const Hero = () => {
     <div className="relative">
       {/* Image */}
       <div className="flex justify-center items-center">
-        <img src={hero} className="w-full h-auto" />
+        <img
+          src={hero}
+          alt="Purple wave pattern design"
+          className="w-full h-auto"
+        />
       </div>
 
       {/* Text */}
