@@ -71,7 +71,8 @@ const Experience = () => {
           <div key={index} className="border-b border-my-gray overflow-hidden">
             <button
               onClick={() => handleToggle(index)}
-              className="w-full flex justify-between rounded-lg items-center p-4 text-my-gray font-semibold group hover:bg-darkest-purple"
+              className={`w-full flex justify-between rounded-lg items-center p-4 text-my-gray font-semibold group
+    ${activeIndex === index ? "bg-darkest-purple" : "hover:bg-darkest-purple"}`}
             >
               {/* Left Section: Title and Place */}
               <div className="flex text-left space-x-4">
