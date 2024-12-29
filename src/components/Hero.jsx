@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </div>
         {/* Arrow Button for smooth continuation */}
-        <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-dark-purple hidden lg:flex">
+        <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex">
           <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />
         </div>
       </div>

@@ -41,7 +41,7 @@ const AboutMe = () => {
           <p className="my-4">
             I am a fourth year Computing student graduating in Spring 2025 from
             Queen’s University in Kingston, Ontario. I have a specific interest
-            in front-end and full-stack development, along with web and UI/UX
+            in front-end and full-stack development, and enjoy web and UI/UX
             design.
           </p>
           <p>
