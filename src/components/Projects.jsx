@@ -2,8 +2,35 @@ import React from "react";
 import qwic from "../assets/projects/qwic.png";
 import magazine from "../assets/projects/magazine.png";
 import qvsa from "../assets/projects/qvsa.png";
+import ProjectCard from "./ProjectCard";
 
 const projects = () => {
+  const projects = [
+    {
+      title: "Outreach & Community Website",
+      shortTitle: "Community Website",
+      description:
+        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
+      technologies: ["React", "Tailwind CSS", "Node.js"],
+      image: qwic,
+    },
+    {
+      title: "Outreach & Community Website",
+      shortTitle: "Community Website",
+      description:
+        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
+      technologies: ["React", "Tailwind CSS", "Node.js"],
+      image: qvsa,
+    },
+    {
+      title: "Outreach & Community Website",
+      shortTitle: "Community Website",
+      description:
+        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
+      technologies: ["React", "Tailwind CSS", "Node.js"],
+      image: magazine,
+    },
+  ];
   return (
     <div>
       <div className="flex flex-col justify-center items-center pb-20">
@@ -30,49 +57,10 @@ const projects = () => {
         </div>
 
         <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
-          {/* Project Card */}
-          {/* qwic */}
-          <div className="rounded-2xl bg-darkest-purple p-4 w-full md:w-1/3 flex flex-col">
-            <div className="h-64 w-full overflow-hidden rounded-lg">
-              <img
-                src={qwic}
-                alt="qwic website preview"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="text-my-gray text-xl">
-                Outreach & Community Website
-              </p>
-            </div>
-          </div>
-          {/* qvsa */}
-          <div className="rounded-2xl bg-darkest-purple p-4 w-full md:w-1/3 flex flex-col">
-            <div className="h-64 w-full overflow-hidden rounded-lg">
-              <img
-                src={qvsa}
-                alt="qvsa website preview"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="text-my-gray text-xl">
-                Student Association Website
-              </p>
-            </div>
-          </div>
-          {/* cs magazine */}
-          <div className="rounded-2xl bg-darkest-purple p-4 w-full md:w-1/3 flex flex-col">
-            <div className="h-64 w-full overflow-hidden rounded-lg">
-              <img
-                src={magazine}
-                alt="magazine preview"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="text-my-gray text-xl">Student Service Magazine</p>
-            </div>
+          <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
           </div>
         </div>
 
