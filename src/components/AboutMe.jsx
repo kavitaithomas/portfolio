@@ -45,13 +45,13 @@ const AboutMe = () => {
             design.
           </p>
           <p>
-            I am passionate about combining my love for art and technology to
-            build user-focused designs and tools that will help people and
-            businesses thrive. My goal is to break through barriers in
-            technology and make tech accessible to women and marginalized
-            peoples, which I practice as a member of Queen’s Women in Computing,
-            a student-run organization dedicated to exploring technology and
-            embracing empowerment.
+            I am passionate about combining my love for design and technology to
+            build user-focused tools that will help people and businesses
+            thrive. My goal is to break through barriers in technology and make
+            tech accessible to women and marginalized peoples, which I practice
+            as a member of Queen’s Women in Computing, a student-run
+            organization dedicated to exploring technology and embracing
+            empowerment.
           </p>
           <p className="my-4">
             Outside of my work in tech, you can often find me channeling my love
