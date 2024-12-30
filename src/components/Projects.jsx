@@ -1,39 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import qwic from "../assets/projects/qwic.png";
 import magazine from "../assets/projects/magazine.png";
 import qvsa from "../assets/projects/qvsa.png";
 import ProjectCard from "./ProjectCard";
 
-const projects = () => {
+const Projects = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const handleExpand = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null); // Collapse the current card
+    } else {
+      setExpandedIndex(index); // Expand the clicked card
+    }
+  };
+
   const projects = [
     {
       title: "Outreach & Community Website",
-      shortTitle: "Community Website",
       description:
         "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
+      type: "Full-stack Development",
       technologies: ["React", "Tailwind CSS", "Node.js"],
       image: qwic,
     },
     {
-      title: "Outreach & Community Website",
-      shortTitle: "Community Website",
+      title: "Student Association Website",
       description:
-        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
-      technologies: ["React", "Tailwind CSS", "Node.js"],
+        "A comprehensive system for managing student records, teacher schedules, and administrative workflows with cloud integration.",
+      type: "Design and Front-end Development",
+      technologies: ["Django", "PostgreSQL", "Docker"],
       image: qvsa,
     },
     {
-      title: "Outreach & Community Website",
-      shortTitle: "Community Website",
+      title: "Student Service Magazine",
       description:
-        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
-      technologies: ["React", "Tailwind CSS", "Node.js"],
+        "An interactive magazine platform with multimedia support, dynamic layouts, and reader analytics. Designed for modern publishers.",
+      type: "Digital + Print Design",
+      technologies: ["Vue.js", "SCSS", "Firebase"],
       image: magazine,
     },
   ];
+
   return (
     <div>
-      <div className="flex flex-col justify-center items-center pb-20">
+      <div className="flex flex-col justify-center items-center md:mt-16 pb-20">
         {/* Wave Text */}
         <div className="font-title sm:text-2xl md:text-3xl">
           <svg
@@ -56,18 +67,20 @@ const projects = () => {
           </svg>
         </div>
 
+        {/* Project Cards */}
         <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
-          <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              project={project}
+              isExpanded={expandedIndex === index} // Check if the current card is expanded
+              onExpand={() => handleExpand(index)} // Pass expand handler
+            />
+          ))}
         </div>
-
-        {/* closing div */}
       </div>
     </div>
   );
 };
 
-export default projects;
+export default Projects;

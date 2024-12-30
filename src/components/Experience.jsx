@@ -66,7 +66,7 @@ const Experience = () => {
         </div>
       </div>
       {/* Accordion */}
-      <div className="w-full max-w-5xl mx-auto mt-10 space-y-4 pb-20">
+      <div className="w-full max-w-5xl mx-auto mt-10 pb-20">
         {accordionData.map((item, index) => (
           <div key={index} className="border-b border-my-gray overflow-hidden">
             <button

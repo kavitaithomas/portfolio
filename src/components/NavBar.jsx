@@ -30,7 +30,7 @@ const NavBar = () => {
       {/* Mobile hamburger NavBar */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer text-my-gray p-4 md:hidden z-50"
+        className="cursor-pointer fixed top-4 right-4 text-my-gray p-4 md:hidden z-50"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
