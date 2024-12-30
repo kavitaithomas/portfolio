@@ -17,7 +17,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Outreach & Community Website",
+      title: "Outreach & Community Web App",
       description:
         "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
       type: "Full-stack Development",
@@ -25,7 +25,7 @@ const Projects = () => {
       image: qwic,
     },
     {
-      title: "Student Association Website",
+      title: "Student Association Web App",
       description:
         "A comprehensive system for managing student records, teacher schedules, and administrative workflows with cloud integration.",
       type: "Design and Front-end Development",
@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center md:mt-16 pb-20">
+      <div className="flex flex-col justify-center items-center md:mt-16">
         {/* Wave Text */}
         <div className="font-title sm:text-2xl md:text-3xl">
           <svg

@@ -34,9 +34,10 @@ const ProjectCard = ({ project, isExpanded, onExpand }) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex flex-col text-left pt-4 flex-grow">
+          <div className="flex flex-col text-my-gray text-left pt-4 flex-grow">
             <p className="text-my-gray text-xl">{project.title}</p>
-            <p className="text-my-gray text-sm">{project.type}</p>
+            <p>{project.type}</p>
+            <p className="pt-4 bottom-0 right-0">more +</p>
           </div>
         </div>
       )}
