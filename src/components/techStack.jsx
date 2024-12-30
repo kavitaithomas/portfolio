@@ -115,7 +115,7 @@ const TechStack = () => {
               key={id}
               className={`text-my-gray shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} className="w-10 lg:w-20 mx-auto" />
+              <img src={src} alt="logo" className="w-10 lg:w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

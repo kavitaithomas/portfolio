@@ -10,7 +10,7 @@ const Experience = () => {
 
   const accordionData = [
     {
-      title: "Instrcutional Designer",
+      title: "Instructional Designer",
       place: "Queen's Law",
       year: "2025",
       content:
