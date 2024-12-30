@@ -68,7 +68,7 @@ const TechStack = () => {
       id: 9,
       src: python,
       title: "Python",
-      style: "shadow-yellow-200",
+      style: "shadow-yellow-300",
     },
     {
       id: 10,
@@ -80,13 +80,13 @@ const TechStack = () => {
       id: 11,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "shadow-white",
     },
     {
       id: 12,
       src: latex,
       title: "LaTeX",
-      style: "shadow-green-300",
+      style: "shadow-green-400",
     },
     {
       id: 13,
