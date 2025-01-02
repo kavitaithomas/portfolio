@@ -6,8 +6,9 @@ import { MdOutlineEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <div name="contact" className="w-full pb-20">
-      <div className="mt-16 text-my-gray flex flex-col justify-center items-center max-w-2xl py-6">
-        <div className="font-title sm:text-2xl md:text-3xl">
+      {/* Title */}
+      <div className="w-full flex justify-center mt-16">
+        <div className="text-my-gray font-title sm:text-2xl md:text-3xl">
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
@@ -27,7 +28,10 @@ const Contact = () => {
             </text>
           </svg>
         </div>
+      </div>
 
+      {/* Content */}
+      <div className=" text-my-gray flex flex-col justify-center items-center max-w-2xl py-6">
         {/* Social icons for mobile */}
         <div className="flex flex-row justify-center items-center space-x-4 xl:hidden">
           <AiFillLinkedin size={95} color="#f2f2f2" />
@@ -36,7 +40,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <p className="py-4 text-my-gray text-xl">
+      <p className="py-4 text-my-gray text-xl text-center md:text-left">
         Submit the form below to get in touch with me!
       </p>
 
@@ -69,15 +73,15 @@ const Contact = () => {
 
         {/* Social links half */}
         <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col justify-between items-start md:w-1/3 space-y-4">
-          <div className="flex items-center">
+          <div className="flex items-center hover:scale-105 duration-150">
             <AiFillLinkedin size={90} color="#f2f2f2" />
             <p className="p-4 text-xl hidden md:block">Username</p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center hover:scale-105 duration-150">
             <FaGithub size={85} color="#f2f2f2" />
             <p className="p-4 text-xl hidden md:block">Username</p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center hover:scale-105 duration-150">
             <MdOutlineEmail size={90} color="#f2f2f2" />
             <p className="p-4 text-xl hidden md:block">
               kavitathomas10@gmail.com
