@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -30,7 +31,15 @@ const Hero = () => {
 
         {/* Arrow Button */}
         <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex z-20">
-          <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />
+          <Link
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />
+          </Link>
         </div>
       </div>
     </div>

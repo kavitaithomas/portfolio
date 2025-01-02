@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
-    { id: 1, link: "About Me" },
-    { id: 2, link: "Projects" },
-    { id: 3, link: "Experience" },
-    { id: 4, link: "Contact" },
+    { id: 1, link: "About Me", name: "aboutme" },
+    { id: 2, link: "Projects", name: "projects" },
+    { id: 3, link: "Experience", name: "experience" },
+    { id: 4, link: "Contact", name: "contact" },
   ];
 
   // Disable scrolling when nav is open
@@ -25,12 +26,20 @@ const NavBar = () => {
       {/* md and up NavBar */}
       <div className="hidden md:flex justify-center items-center mt-36 w-2/3 h-10 px-16 text-white bg-dark-purple rounded-3xl absolute z-50">
         <ul className="flex justify-between items-center w-full">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, name, link }) => (
             <li
               key={id}
               className="font-normal px-4 hover:scale-110 duration-200 cursor-pointer"
             >
-              {link}
+              <Link
+                to={name}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
@@ -57,12 +66,21 @@ const NavBar = () => {
 
           {/* Menu Links */}
           <ul>
-            {links.map(({ id, link }) => (
+            {links.map(({ id, name, link }) => (
               <li
                 key={id}
                 className="text-center cursor-pointer px-4 py-6 text-4xl"
               >
-                {link}
+                <Link
+                  to={name}
+                  spy={true}
+                  smooth={false}
+                  offset={-50}
+                  duration={500}
+                  onClick={() => setNav(false)} // Close the menu on click
+                >
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
