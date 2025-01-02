@@ -37,7 +37,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-200"
           >
             <AiFillLinkedin size={95} color="#f2f2f2" />
           </a>
@@ -45,7 +45,7 @@ const Contact = () => {
             href="https://github.com/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-200"
           >
             <FaGithub size={90} color="#f2f2f2" />
           </a>
@@ -53,7 +53,7 @@ const Contact = () => {
             href="mailto:kavita.t@queensu.ca"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-200"
           >
             <MdOutlineEmail size={95} color="#f2f2f2" />
           </a>
@@ -98,7 +98,7 @@ const Contact = () => {
 
         {/* Social links for desktop */}
         <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col items-start xl:1/3 space-y-8">
-          <div className="flex items-center hover:scale-105 duration-150">
+          <div className="flex items-center hover:scale-105 duration-200">
             <a
               href="https://www.linkedin.com/in/kavitaithomas"
               target="_blank"
@@ -106,10 +106,10 @@ const Contact = () => {
               className="flex items-center"
             >
               <AiFillLinkedin size={90} color="#f2f2f2" />
-              <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
+              <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
             </a>
           </div>
-          <div className="flex items-center hover:scale-105 duration-150">
+          <div className="flex items-center hover:scale-105 duration-200">
             <a
               href="https://github.com/kavitaithomas"
               target="_blank"
@@ -117,10 +117,10 @@ const Contact = () => {
               className="flex items-center"
             >
               <FaGithub size={85} color="#f2f2f2" />
-              <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
+              <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
             </a>
           </div>
-          <div className="flex items-center hover:scale-105 duration-150">
+          <div className="flex items-center hover:scale-105 duration-200">
             <a
               href="mailto:kavita.t@queensu.ca"
               target="_blank"

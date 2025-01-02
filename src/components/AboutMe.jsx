@@ -3,7 +3,7 @@ import headshot from "../assets/headshot.png";
 
 const AboutMe = () => {
   return (
-    <div className="w-full flex flex-col items-center md:my-10">
+    <div name="aboutme" className="w-full flex flex-col items-center md:my-10">
       {/* Wave Text */}
       <div className="font-title my-4 sm:text-2xl md:text-3xl">
         <svg
@@ -37,7 +37,7 @@ const AboutMe = () => {
         </div>
 
         {/* About Me text */}
-        <div className="text-my-gray max-w-2xl lg:flex-grow text-left text-lg">
+        <div className="text-my-gray max-w-2xl lg:flex-grow text-left text-xl">
           <p className="my-4">
             I am a fourth year Computing student graduating in Spring 2025 from
             Queen’s University in Kingston, Ontario. I have a specific interest

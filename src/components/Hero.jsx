@@ -4,7 +4,7 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative z-10">
       {/* Image */}
       <div className="flex justify-center items-center">
         <img
@@ -16,7 +16,7 @@ const Hero = () => {
 
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
-        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray">
+        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray z-20">
           <p className="text-base lg:text-xl xl:text-2xl font-semibold absolute top-[35%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
             web design
           </p>
@@ -27,8 +27,9 @@ const Hero = () => {
             software development
           </p>
         </div>
-        {/* Arrow Button for smooth continuation */}
-        <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex">
+
+        {/* Arrow Button */}
+        <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex z-20">
           <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />
         </div>
       </div>

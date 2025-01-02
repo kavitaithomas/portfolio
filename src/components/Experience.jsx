@@ -31,7 +31,7 @@ const Experience = () => {
         "Tailwind CSS can be installed via npm or using a CDN for quick prototyping.",
     },
     {
-      title: "Marketing, Communications, Publications Assistant",
+      title: "Marketing, Communications, and Publications Assistant",
       place: "Career Services",
       year: "2023",
       content:
@@ -42,7 +42,7 @@ const Experience = () => {
   return (
     <div>
       {/* Wave Text */}
-      <div className="flex flex-col items-center md:my-6">
+      <div name="experience" className="flex flex-col items-center md:my-6">
         {/* Title */}
         <div className="font-title mt-2 sm:text-2xl md:text-3xl">
           <svg
@@ -85,7 +85,7 @@ const Experience = () => {
                 </div>
               </div>
 
-              {/* Right Section: Year and Toggle Icon */}
+              {/* Right Section: Year and + Icon */}
               <div className="flex items-center space-x-2">
                 <span>{item.year}</span>
                 <span>{activeIndex === index ? "-" : "+"}</span>
