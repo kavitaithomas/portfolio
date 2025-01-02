@@ -31,15 +31,36 @@ const Contact = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="w-full flex justify-center pb-6">
+      <div className="w-full flex justify-center pb-12">
         <div className="flex flex-row justify-center items-center space-x-8 xl:hidden">
-          <AiFillLinkedin size={95} color="#f2f2f2" />
-          <FaGithub size={90} color="#f2f2f2" />
-          <MdOutlineEmail size={95} color="#f2f2f2" />
+          <a
+            href="https://www.linkedin.com/in/kavitaithomas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            <AiFillLinkedin size={95} color="#f2f2f2" />
+          </a>
+          <a
+            href="https://github.com/kavitaithomas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            <FaGithub size={90} color="#f2f2f2" />
+          </a>
+          <a
+            href="mailto:kavita.t@queensu.ca"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            <MdOutlineEmail size={95} color="#f2f2f2" />
+          </a>
         </div>
       </div>
 
-      <p className="pb-4 text-my-gray text-xl text-center md:text-left">
+      <p className="pb-4 text-my-gray text-xl text-center xl:text-left">
         Submit the form below to get in touch with me!
       </p>
 
@@ -76,18 +97,39 @@ const Contact = () => {
         </div>
 
         {/* Social links for desktop */}
-        <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col justify-between items-start xl:1/3 space-y-4">
+        <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col items-start xl:1/3 space-y-8">
           <div className="flex items-center hover:scale-105 duration-150">
-            <AiFillLinkedin size={90} color="#f2f2f2" />
-            <p className="p-4 text-xl hidden md:block">Username</p>
+            <a
+              href="https://www.linkedin.com/in/kavitaithomas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <AiFillLinkedin size={90} color="#f2f2f2" />
+              <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
+            </a>
           </div>
           <div className="flex items-center hover:scale-105 duration-150">
-            <FaGithub size={85} color="#f2f2f2" />
-            <p className="p-4 text-xl hidden md:block">Username</p>
+            <a
+              href="https://github.com/kavitaithomas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <FaGithub size={85} color="#f2f2f2" />
+              <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
+            </a>
           </div>
           <div className="flex items-center hover:scale-105 duration-150">
-            <MdOutlineEmail size={90} color="#f2f2f2" />
-            <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
+            <a
+              href="mailto:kavita.t@queensu.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <MdOutlineEmail size={90} color="#f2f2f2" />
+              <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
+            </a>
           </div>
         </div>
       </div>
