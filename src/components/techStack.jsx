@@ -104,8 +104,8 @@ const TechStack = () => {
 
   return (
     <div>
-      <div className="my-8">
-        <div className="text-my-gray bg-darkest-purple p-4 rounded-lg text-xl">
+      <div>
+        <div className="text-my-gray my-4 bg-darkest-purple p-4 rounded-lg text-xl">
           <p>
             These are technologies I have experience with. I am always finding
             different ways to apply my skills, and am currently focusing on
