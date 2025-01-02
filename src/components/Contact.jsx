@@ -46,7 +46,7 @@ const Contact = () => {
       <div className="flex flex-col xl:flex-row justify-between">
         {/* Contact form half */}
         <div className="flex flex-col w-full xl:w-2/3">
-          <form action="">
+          <form action="https://getform.io/f/azyyeoqb" method="POST">
             <div className="pb-4 flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <input
                 type="text"
@@ -67,6 +67,11 @@ const Contact = () => {
               rows="10"
               className="p-2 w-full bg-transparent border-2 rounded-md text-my-gray focus:outline-none"
             ></textarea>
+            <div className="flex justify-center xl:justify-start">
+              <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-110 duration-200 hover:bg-darkest-purple hover:text-my-gray">
+                Send
+              </button>
+            </div>
           </form>
         </div>
 
@@ -85,12 +90,6 @@ const Contact = () => {
             <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
           </div>
         </div>
-      </div>
-
-      <div className="flex justify-center xl:justify-start">
-        <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-110 duration-200 hover:bg-darkest-purple hover:text-my-gray">
-          Send
-        </button>
       </div>
     </div>
   );

@@ -46,7 +46,8 @@ const Projects = () => {
     <div>
       <div className="flex flex-col justify-center items-center md:my-10">
         {/* Wave Text */}
-        <div className="font-title my-4 sm:text-2xl md:text-3xl">
+        <div className="font-title my-4
+         sm:text-2xl md:text-3xl">
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
