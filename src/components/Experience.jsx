@@ -42,9 +42,9 @@ const Experience = () => {
   return (
     <div>
       {/* Wave Text */}
-      <div className="flex flex-col items-center md:mt-16">
+      <div className="flex flex-col items-center md:my-6">
         {/* Title */}
-        <div className="font-title sm:text-2xl md:text-3xl">
+        <div className="font-title mt-2 sm:text-2xl md:text-3xl">
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
@@ -66,12 +66,15 @@ const Experience = () => {
         </div>
       </div>
       {/* Accordion */}
-      <div className="w-full max-w-5xl mx-auto">
+      <div className="w-full">
         {accordionData.map((item, index) => (
-          <div key={index} className="border-b border-my-gray overflow-hidden">
+          <div
+            key={index}
+            className="text-lg border-b border-my-gray overflow-hidden"
+          >
             <button
               onClick={() => handleToggle(index)}
-              className={`w-full flex justify-between rounded-lg items-center p-4 text-my-gray font-semibold group
+              className={`w-full flex justify-between rounded-lg items-center p-6 text-my-gray font-semibold group
     ${activeIndex === index ? "bg-darkest-purple" : "hover:bg-darkest-purple"}`}
             >
               {/* Left Section: Title and Place */}
@@ -90,7 +93,7 @@ const Experience = () => {
             </button>
             <div
               className={`transition-[max-height] duration-300 ease-in-out overflow-hidden ${
-                activeIndex === index ? "max-h-40 p-4" : "max-h-0"
+                activeIndex === index ? "max-h-40 p-6" : "max-h-0"
               }  text-my-gray`}
             >
               {item.content}

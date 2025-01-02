@@ -44,9 +44,9 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center md:mt-16">
+      <div className="flex flex-col justify-center items-center md:my-10">
         {/* Wave Text */}
-        <div className="font-title sm:text-2xl md:text-3xl">
+        <div className="font-title my-4 sm:text-2xl md:text-3xl">
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
@@ -68,7 +68,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
+        <div className="flex flex-col space-y-8 md:flex-row md:space-x-6 md:space-y-0">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

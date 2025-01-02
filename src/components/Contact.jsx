@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div name="contact" className="w-full pb-20">
       {/* Title */}
-      <div className="w-full flex justify-center mt-16">
-        <div className="text-my-gray font-title sm:text-2xl md:text-3xl">
+      <div className="w-full flex justify-center md:mt-10">
+        <div className="text-my-gray font-title mt-4 sm:text-2xl md:text-3xl">
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
@@ -30,17 +30,16 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Content */}
-      <div className=" text-my-gray flex flex-col justify-center items-center max-w-2xl py-6">
-        {/* Social icons for mobile */}
-        <div className="flex flex-row justify-center items-center space-x-4 xl:hidden">
+      {/* Social Icons */}
+      <div className="w-full flex justify-center pb-6">
+        <div className="flex flex-row justify-center items-center space-x-8 xl:hidden">
           <AiFillLinkedin size={95} color="#f2f2f2" />
           <FaGithub size={90} color="#f2f2f2" />
           <MdOutlineEmail size={95} color="#f2f2f2" />
         </div>
       </div>
 
-      <p className="py-4 text-my-gray text-xl text-center md:text-left">
+      <p className="pb-4 text-my-gray text-xl text-center md:text-left">
         Submit the form below to get in touch with me!
       </p>
 
@@ -71,8 +70,8 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Social links half */}
-        <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col justify-between items-start md:w-1/3 space-y-4">
+        {/* Social links for desktop */}
+        <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col justify-between items-start xl:1/3 space-y-4">
           <div className="flex items-center hover:scale-105 duration-150">
             <AiFillLinkedin size={90} color="#f2f2f2" />
             <p className="p-4 text-xl hidden md:block">Username</p>
@@ -83,15 +82,16 @@ const Contact = () => {
           </div>
           <div className="flex items-center hover:scale-105 duration-150">
             <MdOutlineEmail size={90} color="#f2f2f2" />
-            <p className="p-4 text-xl hidden md:block">
-              kavitathomas10@gmail.com
-            </p>
+            <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
           </div>
         </div>
       </div>
-      <button className="text-darkest-purple text-xl font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-110 duration-200 hover:bg-darkest-purple hover:text-my-gray">
-        Send
-      </button>
+
+      <div className="flex justify-center xl:justify-start">
+        <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-110 duration-200 hover:bg-darkest-purple hover:text-my-gray">
+          Send
+        </button>
+      </div>
     </div>
   );
 };

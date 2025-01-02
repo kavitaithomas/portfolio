@@ -104,19 +104,24 @@ const TechStack = () => {
 
   return (
     <div>
-      <div className="mt-16">
-        <div className="text-my-gray text-5xl">
-          <p>Tech stack</p>
+      <div className="my-8">
+        <div className="text-my-gray bg-darkest-purple p-4 rounded-lg text-xl">
+          <p>
+            These are technologies I have experience with. I am always finding
+            different ways to apply my skills, and am currently focusing on
+            strengthening my skills in backend development and learning REST
+            APIs!
+          </p>
         </div>
 
-        <div className="w-full justify-between grid grid-cols-4 lg:grid-cols-7 gap-8 text-center py-8 px-0 md:px-12">
+        <div className="w-full justify-between grid grid-cols-4 lg:grid-cols-7 gap-8 text-center py-8">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`text-my-gray shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="logo" className="w-10 lg:w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <p className="mt-4 text-center">{title}</p>
             </div>
           ))}
         </div>

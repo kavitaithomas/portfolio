@@ -3,9 +3,9 @@ import headshot from "../assets/headshot.png";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center md:mt-16">
+    <div className="w-full flex flex-col items-center md:my-10">
       {/* Wave Text */}
-      <div className="font-title sm:text-2xl md:text-3xl">
+      <div className="font-title my-4 sm:text-2xl md:text-3xl">
         <svg
           className="w-[1000px] h-[200px]"
           viewBox="0 0 400 100"
@@ -26,7 +26,7 @@ const AboutMe = () => {
         </svg>
       </div>
 
-      <div className="flex flex-col items-center xl:flex-row justify-evenly lg:items-center w-full">
+      <div className="flex flex-col items-center xl:flex-row justify-evenly w-full">
         {/* Headshot */}
         <div className="w-72 h-72 rounded-full overflow-hidden md:w-80 md:h-80 mb-8 xl:mb-0 mr-4 ">
           <img
@@ -37,7 +37,7 @@ const AboutMe = () => {
         </div>
 
         {/* About Me text */}
-        <div className="text-my-gray max-w-2xl lg:flex-grow text-left md:text-xl">
+        <div className="text-my-gray max-w-2xl lg:flex-grow text-left text-lg">
           <p className="my-4">
             I am a fourth year Computing student graduating in Spring 2025 from
             Queen’s University in Kingston, Ontario. I have a specific interest
