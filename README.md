@@ -1,5 +1,6 @@
 # Portfolio website
 I built my portolio by prototyping it in Figma, then developing it using React js and Tailwind css.
+
 <img width="1430" alt="Screen Shot 2025-01-02 at 4 29 16 PM" src="https://github.com/user-attachments/assets/235da74a-006c-40de-b86f-779f656380cc" />
 
 # To explore this project locally:
