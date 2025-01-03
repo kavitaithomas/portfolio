@@ -29,7 +29,7 @@ const AboutMe = () => {
 
         <div className="flex flex-col items-center xl:flex-row justify-evenly w-full">
           {/* Headshot */}
-          <div className="w-72 h-72 rounded-full overflow-hidden md:w-80 md:h-80 mb-8 xl:mb-0 mr-4 ">
+          <div className="w-72 h-72 sm:justify-center rounded-full overflow-hidden md:w-80 md:h-80 mb-8 xl:mb-0 mr-4 ">
             <img
               src={headshot}
               alt="Kavita Thomas Headshot"
