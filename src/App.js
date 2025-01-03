@@ -8,8 +8,8 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-darkest-purple to-dark-purple min-h-screen">
-      <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-36">
+    <div className="bg-gradient-to-b from-darkest-purple to-dark-purple min-h-screen overflow-x-hidden">
+      <div className="mx-8 md:mx-16 lg:mx-36 max-w-full">
         <NavBar />
         <Hero />
         <AboutMe />
