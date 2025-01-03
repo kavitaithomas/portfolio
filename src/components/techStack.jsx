@@ -109,7 +109,7 @@ const TechStack = () => {
           <p>
             These are technologies I have experience with. I am always finding
             different ways to apply my skills, and am currently focusing on
-            strengthening my skills in backend development and learning REST
+            strengthening my skills in backend development by learning REST
             APIs!
           </p>
         </div>

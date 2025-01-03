@@ -18,27 +18,49 @@ const Projects = () => {
   const projects = [
     {
       title: "Outreach & Community Web App",
+      date: "June 2024 - Present",
       description:
-        "A platform designed to facilitate community engagement and outreach programs. Features include event scheduling, volunteer signups, and real-time updates.",
+        "Designed, developed and deployed a web app to market QWIC's resources, merchandise and events, resulting in an effective platform for sponsorship and community outreach. Next steps will be building an admin panel and backend using Docker, Prisma and PostgreSQL.",
       type: "Full-stack Development",
-      technologies: ["React", "Tailwind CSS", "Node.js"],
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "Vercel",
+        "Docker",
+        "Prisma",
+        "PostgreSQL",
+      ],
       image: qwic,
+      label1: "Demo",
+      label2: "Code",
+      link1: "https://qwic.org/",
+      link2: "https://github.com/queens-wic/qwic",
     },
     {
       title: "Student Association Web App",
+      date: "January - May 2024",
       description:
-        "A comprehensive system for managing student records, teacher schedules, and administrative workflows with cloud integration.",
+        "Led the design and collaborated for front-end development in a team of 5 for a 4-month development sprint working on a student club website. Effectively learned and implemented React.js, Tailwind CSS, and Git in a 4 month time frame.",
       type: "Design and Front-end Development",
-      technologies: ["Django", "PostgreSQL", "Docker"],
+      technologies: ["Figma", "React.js", "Tailwind CSS"],
       image: qvsa,
+      label1: "Design File",
+      link1:
+        "https://www.figma.com/design/U8qyWbu5f8JCwlPeCJZfSy/QVSA?node-id=81-2&p=f&t=QjsKe8dDDs1vBH8x-0",
+      label2: "Code",
+      link2: "https://github.com/queens-web-development-club/qvsa",
     },
     {
       title: "Student Service Magazine",
+      date: "May - August 2023",
       description:
-        "An interactive magazine platform with multimedia support, dynamic layouts, and reader analytics. Designed for modern publishers.",
+        "Designed and produced a career development magazine intended for students for digital and physical print. Implemented brand guidelines, accessibility features and print specifications, resulting in 300+ physical copies and an accesible digital copy marketing Queen's Career Services resources.",
       type: "Digital + Print Design",
-      technologies: ["Vue.js", "SCSS", "Firebase"],
+      technologies: ["Adobe InDesign", "Adobe Illustrator"],
       image: magazine,
+      label1: "Demo",
+      link1:
+        "https://careers.queensu.ca/sites/cars3www/files/uploaded_files/Queens%20Best%20magazine%20Online.pdf",
     },
   ];
 
