@@ -21,8 +21,10 @@ const Hero = () => {
           <p className="text-base flex flex-wrap lg:text-xl xl:text-2xl font-semibold absolute top-[35%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
             web design
           </p>
-          <h1 className=" text-3xl md:text-5xl lg:text-6xl my-6 p-4 font-bold text-center overflow-hidden
-          ">
+          <h1
+            className="my-10 text-3xl md:text-5xl lg:text-6xl lg:my-6 p-4 font-bold text-center overflow-hidden
+          "
+          >
             Kavita Thomas
           </h1>
           <p className="text-base flex flex-wrap lg:text-xl xl:text-2xl font-semibold absolute bottom-[35%] right-[5%] sm:bottom-[37%] sm:right-[8%] md:bottom-[39%] md:right-[10%]">
