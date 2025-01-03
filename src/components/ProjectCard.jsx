@@ -16,10 +16,12 @@ const ProjectCard = ({ project, isExpanded, onExpand }) => {
         <div className="flex flex-col text-lg p-4 space-y-4 min-h-[300px]">
           <div className="flex flex-row space-x-4 justify-start items-center">
             <h2 className="text-2xl font-bold text-my-gray">{project.title}</h2>
-            <Button label={project.label1} link={project.link1} />
-            {project.label2 && project.link2 && (
-              <Button label={project.label2} link={project.link2} />
-            )}
+            <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+              <Button label={project.label1} link={project.link1} />
+              {project.label2 && project.link2 && (
+                <Button label={project.label2} link={project.link2} />
+              )}
+            </div>
           </div>
           <p className="text-blue-200 font-semibold">{project.date}</p>
           <p className="text-my-gray">{project.description}</p>

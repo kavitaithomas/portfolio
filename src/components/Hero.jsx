@@ -18,16 +18,13 @@ const Hero = () => {
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
         <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray z-20">
-          <p className="text-base flex flex-wrap lg:text-xl xl:text-2xl font-semibold absolute top-[35%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
+          <p className="text-sm sm:text-lg md:text-xl xl:text-2xl font-semibold absolute top-[25%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
             web design
           </p>
-          <h1
-            className="my-40 text-3xl md:text-5xl lg:text-6xl lg:my-6 p-4 font-bold text-center overflow-hidden
-          "
-          >
+          <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl lg:my-8 p-10 font-bold text-center">
             Kavita Thomas
           </h1>
-          <p className="text-base flex flex-wrap lg:text-xl xl:text-2xl font-semibold absolute bottom-[35%] right-[5%] sm:bottom-[37%] sm:right-[8%] md:bottom-[39%] md:right-[10%]">
+          <p className="text-sm w-1/3 sm:w-auto sm:text-lg md:text-xl xl:text-2xl font-semibold absolute bottom-[20%] right-[5%] sm:bottom-[37%] sm:right-[8%] md:bottom-[39%] md:right-[10%]">
             software development
           </p>
         </div>

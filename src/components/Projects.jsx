@@ -44,7 +44,7 @@ const Projects = () => {
       type: "Design and Front-end Development",
       technologies: ["Figma", "React.js", "Tailwind CSS"],
       image: qvsa,
-      label1: "Design File",
+      label1: "Design",
       link1:
         "https://www.figma.com/design/U8qyWbu5f8JCwlPeCJZfSy/QVSA?node-id=81-2&p=f&t=QjsKe8dDDs1vBH8x-0",
       label2: "Code",

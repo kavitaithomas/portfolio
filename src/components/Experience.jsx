@@ -82,7 +82,7 @@ const Experience = () => {
     ${activeIndex === index ? "bg-darkest-purple" : "hover:bg-darkest-purple"}`}
             >
               {/* Left Section: Title and Place */}
-              <div className="flex text-left space-x-4">
+              <div className="flex text-left space-x-2">
                 <span>{item.title}</span>
                 <div className="text-gray-400">
                   <span>{item.place}</span>
