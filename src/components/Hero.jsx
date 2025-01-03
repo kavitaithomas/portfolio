@@ -22,7 +22,7 @@ const Hero = () => {
             web design
           </p>
           <h1
-            className="my-10 text-3xl md:text-5xl lg:text-6xl lg:my-6 p-4 font-bold text-center overflow-hidden
+            className="my-20 text-3xl md:text-5xl lg:text-6xl lg:my-6 p-4 font-bold text-center overflow-hidden
           "
           >
             Kavita Thomas
