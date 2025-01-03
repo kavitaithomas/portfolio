@@ -92,11 +92,13 @@ const Experience = () => {
               {/* Right Section: Year and + Icon */}
               <div className="flex items-center space-x-2">
                 <span>{item.year}</span>
-                <span>{activeIndex === index ? "-" : "+"}</span>
+                <span className="text-2xl">
+                  {activeIndex === index ? "-" : "+"}
+                </span>
               </div>
             </button>
             <div
-              className={`transition-[max-height] duration-300 ease-in-out overflow-hidden ${
+              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${
                 activeIndex === index ? "h-auto p-6" : "h-0"
               } text-my-gray`}
             >

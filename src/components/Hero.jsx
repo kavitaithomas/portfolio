@@ -35,7 +35,7 @@ const Hero = () => {
             to="aboutme"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-80}
             duration={500}
           >
             <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />

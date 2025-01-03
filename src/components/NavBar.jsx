@@ -50,7 +50,7 @@ const NavBar = () => {
       {/* Mobile hamburger NavBar */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer fixed top-4 right-4 text-my-gray p-4 md:hidden z-50"
+        className="bg-darkest-purple rounded-lg cursor-pointer fixed top-0 right-0 text-my-gray p-2 md:hidden z-50"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -61,7 +61,7 @@ const NavBar = () => {
           {/* Close Icon */}
           <div
             onClick={() => setNav(false)}
-            className="cursor-pointer fixed top-4 right-4 text-my-gray p-4 z-50"
+            className="bg-darkest-purple rounded-lg cursor-pointer fixed top-0 right-0 text-my-gray p-4 z-50"
           >
             <FaTimes size={30} />
           </div>
@@ -71,7 +71,7 @@ const NavBar = () => {
             {links.map(({ id, name, link }) => (
               <li
                 key={id}
-                className="text-center cursor-pointer px-4 py-6 text-4xl"
+                className="text-center cursor-pointer px-4 py-6 text-2xl"
               >
                 <Link
                   to={name}
