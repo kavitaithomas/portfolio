@@ -24,25 +24,27 @@ const NavBar = () => {
   return (
     <div className="flex justify-center items-center z-50">
       {/* md and up NavBar */}
-      <div className="hidden md:flex justify-center items-center mt-36 w-2/3 h-10 px-16 text-white bg-dark-purple rounded-3xl absolute z-50">
-        <ul className="flex justify-between items-center w-full">
-          {links.map(({ id, name, link }) => (
-            <li
-              key={id}
-              className="font-normal px-4 hover:scale-110 duration-200 cursor-pointer"
-            >
-              <Link
-                to={name}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
+      <div className="hidden md:flex justify-center items-center w-full h-16 px-16 bg-darkest-purple top-0 fixed z-50">
+        <div className="text-my-gray w-2/3">
+          <ul className="flex justify-between items-center">
+            {links.map(({ id, name, link }) => (
+              <li
+                key={id}
+                className="font-normal px-4 hover:scale-110 hover:text-white duration-200 cursor-pointer"
               >
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                <Link
+                  to={name}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {/* Mobile hamburger NavBar */}
