@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="flex justify-center items-center">
         <img
           src={hero}
-          alt="Purple wave pattern design"
-          className="w-full h-auto"
+          alt="Purple waves of life design"
+          className="w-full h-auto "
         />
       </div>
 

@@ -32,7 +32,7 @@ const TechStack = () => {
       id: 3,
       src: nextjs,
       title: "Next js",
-      style: "shadow-white",
+      style: "shadow-my-gray",
     },
     {
       id: 4,
@@ -74,13 +74,13 @@ const TechStack = () => {
       id: 10,
       src: bash,
       title: "Bash",
-      style: "shadow-white",
+      style: "shadow-my-gray",
     },
     {
       id: 11,
       src: github,
       title: "GitHub",
-      style: "shadow-white",
+      style: "shadow-my-gray",
     },
     {
       id: 12,

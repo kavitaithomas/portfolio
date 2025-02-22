@@ -72,17 +72,14 @@ const Experience = () => {
       {/* Accordion */}
       <div className="w-full">
         {accordionData.map((item, index) => (
-          <div
-            key={index}
-            className="text-lg border-b border-my-gray overflow-hidden"
-          >
+          <div key={index} className="text-lg my-2 overflow-hidden">
             <button
               onClick={() => handleToggle(index)}
               className={`w-full flex justify-between rounded-lg items-center p-6 text-my-gray font-semibold group
     ${
       activeIndex === index
-        ? "bg-darkest-purple"
-        : "hover:bg-darkest-purple duration-700"
+        ? "bg-darkest-purple border-2 border-my-gray"
+        : "duration-700 border-b border-my-gray hover:border-2 hover:border-my-gray bg-darkest-purple"
     }`}
             >
               {/* Left Section: Title and Place */}
