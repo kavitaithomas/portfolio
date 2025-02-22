@@ -30,14 +30,14 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Social Icons */}
+      {/* Social Icons for mobile*/}
       <div className="w-full flex justify-center pb-12">
         <div className="flex flex-row justify-center items-center space-x-8 xl:hidden">
           <a
             href="https://www.linkedin.com/in/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center hover:scale-105 duration-200"
+            className="flex items-center"
           >
             <AiFillLinkedin size={95} color="#f2f2f2" />
           </a>
@@ -45,7 +45,7 @@ const Contact = () => {
             href="https://github.com/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center hover:scale-105 duration-200"
+            className="flex items-center"
           >
             <FaGithub size={90} color="#f2f2f2" />
           </a>
@@ -53,7 +53,7 @@ const Contact = () => {
             href="mailto:kavita.t@queensu.ca"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center hover:scale-105 duration-200"
+            className="flex items-center"
           >
             <MdOutlineEmail size={95} color="#f2f2f2" />
           </a>
@@ -89,7 +89,7 @@ const Contact = () => {
               className="p-2 w-full bg-transparent border-2 rounded-md text-my-gray focus:outline-none"
             ></textarea>
             <div className="flex justify-center xl:justify-start">
-              <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-110 duration-200 hover:bg-darkest-purple hover:text-my-gray">
+              <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-darkest-purple hover:text-my-gray">
                 Send
               </button>
             </div>
@@ -98,7 +98,7 @@ const Contact = () => {
 
         {/* Social links for desktop */}
         <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col items-start xl:1/3 space-y-8">
-          <div className="flex items-center hover:scale-105 duration-200">
+          <div className="flex items-center hover:scale-105 duration-500">
             <a
               href="https://www.linkedin.com/in/kavitaithomas"
               target="_blank"
@@ -109,7 +109,7 @@ const Contact = () => {
               <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
             </a>
           </div>
-          <div className="flex items-center hover:scale-105 duration-200">
+          <div className="flex items-center hover:scale-105 duration-500">
             <a
               href="https://github.com/kavitaithomas"
               target="_blank"
@@ -120,7 +120,7 @@ const Contact = () => {
               <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
             </a>
           </div>
-          <div className="flex items-center hover:scale-105 duration-200">
+          <div className="flex items-center hover:scale-105 duration-500">
             <a
               href="mailto:kavita.t@queensu.ca"
               target="_blank"

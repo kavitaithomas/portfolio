@@ -7,7 +7,7 @@ const ProjectCard = ({ project, isExpanded, onExpand }) => {
   return (
     <div
       onClick={onExpand}
-      className={`rounded-2xl bg-darkest-purple p-2 cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 ${
+      className={`rounded-2xl bg-darkest-purple p-2 cursor-pointer transition-all duration-500 ease-in-out hover:scale-105 ${
         isExpanded ? "w-full" : "w-full md:w-1/3"
       } flex flex-col ${isExpanded ? "overflow-visible" : "overflow-hidden"}`}
     >

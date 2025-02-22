@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
 
         {/* Arrow Button */}
-        <div className="absolute bottom-10 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex z-20">
+        <div className="absolute bottom-20 items-center text-my-gray rounded-3xl h-16 bg-darkest-purple hidden lg:flex z-20">
           <Link
             to="aboutme"
             spy={true}
