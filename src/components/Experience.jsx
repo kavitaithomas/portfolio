@@ -61,7 +61,7 @@ const Experience = () => {
                 fill="transparent"
               />
             </defs>
-            <text fill="#F2F2F2" fontWeight="bold">
+            <text fill="#241527" fontWeight="bold">
               <textPath href="#wave" textAnchor="middle" startOffset="50%">
                 Experience
               </textPath>

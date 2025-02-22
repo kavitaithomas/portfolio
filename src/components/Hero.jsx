@@ -17,7 +17,7 @@ const Hero = () => {
 
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
-        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray z-20">
+        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray">
           <p className="text-sm sm:text-lg md:text-xl xl:text-2xl font-semibold absolute top-[25%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
             web design
           </p>

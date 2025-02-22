@@ -7,9 +7,9 @@ module.exports = {
         title: ["Chango"],
       },
       colors: {
-        "darkest-purple": "#120020",
-        "dark-purple": "#49003B",
-        "my-gray": "#F2F2F2",
+        "darkest-purple": "#F2E1FF",
+        "dark-purple": "#F8F3FF",
+        "my-gray": "#241527",
       },
     },
   },

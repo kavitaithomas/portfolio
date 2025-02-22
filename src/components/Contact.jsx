@@ -21,7 +21,7 @@ const Contact = () => {
                 fill="transparent"
               />
             </defs>
-            <text fill="#F2F2F2" fontWeight="bold">
+            <text fill="#241527" fontWeight="bold">
               <textPath href="#wave" textAnchor="middle" startOffset="50%">
                 Contact
               </textPath>
@@ -37,25 +37,25 @@ const Contact = () => {
             href="https://www.linkedin.com/in/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-500"
           >
-            <AiFillLinkedin size={95} color="#f2f2f2" />
+            <AiFillLinkedin size={95} color="#241527" />
           </a>
           <a
             href="https://github.com/kavitaithomas"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-500"
           >
-            <FaGithub size={90} color="#f2f2f2" />
+            <FaGithub size={90} color="#241527" />
           </a>
           <a
             href="mailto:kavita.t@queensu.ca"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center hover:scale-105 duration-500"
           >
-            <MdOutlineEmail size={95} color="#f2f2f2" />
+            <MdOutlineEmail size={95} color="#241527" />
           </a>
         </div>
       </div>
@@ -73,20 +73,20 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="p-2 bg-transparent border-2 rounded-md text-my-gray focus:outline-none xl:w-2/3"
+                className="p-2 bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none xl:w-2/3"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Enter your e-mail"
-                className="p-2 bg-transparent border-2 rounded-md text-my-gray focus:outline-none xl:w-2/3"
+                className="p-2 bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none xl:w-2/3"
               />
             </div>
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
-              className="p-2 w-full bg-transparent border-2 rounded-md text-my-gray focus:outline-none"
+              className="p-2 w-full bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none"
             ></textarea>
             <div className="flex justify-center xl:justify-start">
               <button className="text-darkest-purple text-lg font-semibold bg-my-gray px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-darkest-purple hover:text-my-gray">
@@ -105,7 +105,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <AiFillLinkedin size={90} color="#f2f2f2" />
+              <AiFillLinkedin size={90} color="#241527" />
               <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
             </a>
           </div>
@@ -116,7 +116,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <FaGithub size={85} color="#f2f2f2" />
+              <FaGithub size={85} color="#241527" />
               <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
             </a>
           </div>
@@ -127,7 +127,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <MdOutlineEmail size={90} color="#f2f2f2" />
+              <MdOutlineEmail size={90} color="#241527" />
               <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
             </a>
           </div>
