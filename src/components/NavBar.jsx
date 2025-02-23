@@ -25,7 +25,7 @@ const NavBar = () => {
     <div className="flex justify-center items-center z-50">
       {/* md and up NavBar */}
       <div className="hidden md:flex justify-center items-center w-full h-16 px-16 bg-darkest-purple top-0 fixed z-50">
-        <div className="text-my-gray w-2/3">
+        <div className="font-title text-my-gray w-2/3">
           <ul className="flex justify-between items-center">
             {links.map(({ id, name, link }) => (
               <li

@@ -6,7 +6,10 @@ const AboutMe = () => {
     <div name="aboutme">
       <div className="w-full flex flex-col items-center md:my-10">
         {/* Wave Text */}
-        <div className="font-title my-4 sm:text-2xl md:text-3xl">
+        <div
+          className="font-title my-4
+         sm:text-2xl md:text-3xl"
+        >
           <svg
             className="w-[1000px] h-[200px]"
             viewBox="0 0 400 100"
@@ -26,7 +29,6 @@ const AboutMe = () => {
             </text>
           </svg>
         </div>
-
         <div className="flex flex-col items-center xl:flex-row justify-evenly w-full">
           {/* Headshot */}
           <div className="w-72 h-72 sm:justify-center rounded-full overflow-hidden md:w-80 md:h-80 mb-8 xl:mb-0 mr-4 ">

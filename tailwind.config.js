@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Chango"],
+        title: ["Space Grotesk"],
       },
       colors: {
         "darkest-purple": "#F2E1FF",
