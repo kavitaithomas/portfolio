@@ -1,5 +1,6 @@
 import React from "react";
 import headshot from "../assets/headshot.png";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const AboutMe = () => {
   return (
@@ -30,14 +31,29 @@ const AboutMe = () => {
           </svg>
         </div>
         <div className="flex flex-col items-center xl:flex-row justify-evenly w-full">
-          {/* Headshot */}
-          <div className="w-72 h-72 sm:justify-center rounded-full overflow-hidden md:w-80 md:h-80 mb-8 xl:mb-0 mr-4 ">
+          {/* Headshot with Link*/}
+          <a
+            href="https://www.linkedin.com/in/kavitaithomas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-72 h-80 rounded-lg border-8 border-my-gray overflow-hidden mb-8 xl:mb-0 mr-4 group"
+          >
+            {/* Profile Image */}
             <img
               src={headshot}
               alt="Kavita Thomas Headshot"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-50"
             />
-          </div>
+
+            {/* LinkedIn Icon - Appears on Hover */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <AiFillLinkedin
+                size={90}
+                color="#241527"
+                className="p-2 rounded-full shadow-lg"
+              />
+            </div>
+          </a>
 
           {/* About Me text */}
           <div className="text-my-gray max-w-2xl lg:flex-grow text-left text-xl">
