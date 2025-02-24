@@ -17,13 +17,16 @@ const Hero = () => {
 
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
-        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray">
-          <h1 className="sm:text-lg md:text-2xl lg:text-3xl xl:4xl font-bold absolute top-[25%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[30%] md:left-[10%]">
+        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray z-20">
+          <p className="px-2 bg-darkest-purple rounded-lg sm:text-lg md:text-4xl font-semibold absolute top-[25%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
             web design
+          </p>
+          <h1 className="px-2 bg-darkest-purple rounded-2xl my-10 text-lg sm:text-3xl md:text-5xl lg:text-6xl lg:my-8 font-bold text-center">
+            Kavita Thomas
           </h1>
-          <h1 className="w-1/3 sm:w-auto sm:text-lg md:text-2xl lg:text-3xl xl:4xl font-bold absolute bottom-[10%] right-[5%] sm:bottom-[20%] sm:right-[8%] md:bottom-[20%] md:right-[5%]">
+          <p className="px-2 bg-darkest-purple rounded-lg w-1/3 sm:w-auto sm:text-lg md:text-4xl font-semibold absolute bottom-[20%] right-[5%] sm:bottom-[37%] sm:right-[8%] md:bottom-[39%] md:right-[10%]">
             software development
-          </h1>
+          </p>
         </div>
 
         {/* Arrow Button */}

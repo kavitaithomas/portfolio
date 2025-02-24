@@ -23,7 +23,7 @@ const AboutMe = () => {
                 fill="transparent"
               />
             </defs>
-            <text fill="#241527" fontWeight="bold">
+            <text fill="#432206" fontWeight="bold">
               <textPath href="#wave" textAnchor="middle" startOffset="50%">
                 Hi! I'm Kavita
               </textPath>
