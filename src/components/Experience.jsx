@@ -46,8 +46,8 @@ const Experience = () => {
 
   return (
     <div>
-      <div name="experience" className="flex flex-col items-center md:my-6">
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium py-10">
+      <div name="experience" className="flex flex-col items-center md:mt-10">
+        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["Experience"]}
             loop={1}

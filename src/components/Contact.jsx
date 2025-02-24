@@ -9,7 +9,7 @@ const Contact = () => {
     <div name="contact" className="w-full pb-20">
       {/* Title */}
       <div className="w-full flex justify-center md:mt-10">
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium py-10">
+        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["Contact"]}
             loop={1}
@@ -23,7 +23,7 @@ const Contact = () => {
       </div>
 
       {/* Social Icons for mobile*/}
-      <div className="w-full flex justify-center pb-12">
+      <div className="w-full flex justify-center">
         <div className="flex flex-row justify-center items-center space-x-8 xl:hidden">
           <a
             href="https://www.linkedin.com/in/kavitaithomas"

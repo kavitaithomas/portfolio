@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative h-screen">
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col md:flex-row md:space-x-20 justify-between items-center my-44">
