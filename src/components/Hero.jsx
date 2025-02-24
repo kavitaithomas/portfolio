@@ -1,32 +1,49 @@
 import React from "react";
-import hero from "../assets/Hero.png";
+import heroimg from "../assets/hero-img.png";
+import { Typewriter } from "react-simple-typewriter";
 import { IoIosArrowRoundDown } from "react-icons/io";
 import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="relative z-10">
-      {/* Hero Image - Touches Top of Page */}
-      <div className="relative flex justify-center items-center">
-        <img
-          src={hero}
-          alt="Purple waves of life design"
-          className="w-full h-auto mt-8"
-        />
-      </div>
-
+    <div className="relative">
       {/* Text */}
       <div className="flex flex-col justify-center items-center">
-        <div className="font-title absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-my-gray z-20">
-          <p className="px-2 bg-darkest-purple rounded-lg sm:text-lg md:text-4xl font-semibold absolute top-[25%] left-[5%] sm:top-[37%] sm:left-[8%] md:top-[39%] md:left-[10%]">
-            web design
-          </p>
-          <h1 className="px-2 bg-darkest-purple rounded-2xl my-10 text-lg sm:text-3xl md:text-5xl lg:text-6xl lg:my-8 font-bold text-center">
-            Kavita Thomas
-          </h1>
-          <p className="px-2 bg-darkest-purple rounded-lg w-1/3 sm:w-auto sm:text-lg md:text-4xl font-semibold absolute bottom-[20%] right-[5%] sm:bottom-[37%] sm:right-[8%] md:bottom-[39%] md:right-[10%]">
-            software development
-          </p>
+        <div className="flex flex-col md:flex-row md:space-x-20 justify-between items-center my-44">
+          <img
+            src={heroimg}
+            alt="retro computer graphic"
+            className="w-96 h-auto mt-8"
+          />
+          {/* Browser Mockup */}
+          <div className="bg-white shadow-lg rounded-lg w-[600px] md:w-[700px] lg:w-[800px]">
+            {/* Fake Browser Header */}
+            <div className="flex items-center space-x-2 p-2 bg-gray-200 rounded-t-lg">
+              <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+            </div>
+
+            {/* Typing Effect & Subtitle */}
+            <div className="p-10 md:p-16 text-center">
+              <h1 className="text-my-gray text-5xl md:text-6xl font-title font-bold whitespace-nowrap">
+                <Typewriter
+                  words={["Kavita Thomas"]}
+                  loop={0}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={200}
+                  deleteSpeed={100}
+                  delaySpeed={1000}
+                />
+              </h1>
+              <p className="font-title text-lg md:text-xl text-my-gray mt-4 font-semibold">
+                Web Design • Software Development
+              </p>
+            </div>
+          </div>
+
+          {/* Image */}
         </div>
 
         {/* Arrow Button */}

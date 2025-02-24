@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -45,29 +46,18 @@ const Experience = () => {
 
   return (
     <div>
-      {/* Wave Text */}
       <div name="experience" className="flex flex-col items-center md:my-6">
-        {/* Title */}
-        <div className="font-title mt-2 sm:text-2xl md:text-3xl">
-          <svg
-            className="w-[1000px] h-[200px]"
-            viewBox="0 0 400 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <path
-                id="wave"
-                d="M10,50 C60,10 140,90 200,50 C260,10 340,90 390,50"
-                fill="transparent"
-              />
-            </defs>
-            <text fill="#432206" fontWeight="bold">
-              <textPath href="#wave" textAnchor="middle" startOffset="50%">
-                Experience
-              </textPath>
-            </text>
-          </svg>
-        </div>
+        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium py-10">
+          <Typewriter
+            words={["Experience"]}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={200}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+        </h1>
       </div>
       {/* Accordion */}
       <div className="w-full">

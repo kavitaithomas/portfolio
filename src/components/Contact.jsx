@@ -2,32 +2,24 @@ import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { Typewriter } from "react-simple-typewriter";
 
 const Contact = () => {
   return (
     <div name="contact" className="w-full pb-20">
       {/* Title */}
       <div className="w-full flex justify-center md:mt-10">
-        <div className="text-my-gray font-title mt-4 sm:text-2xl md:text-3xl">
-          <svg
-            className="w-[1000px] h-[200px]"
-            viewBox="0 0 400 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <path
-                id="wave"
-                d="M10,50 C60,10 140,90 200,50 C260,10 340,90 390,50"
-                fill="transparent"
-              />
-            </defs>
-            <text fill="#432206" fontWeight="bold">
-              <textPath href="#wave" textAnchor="middle" startOffset="50%">
-                Contact
-              </textPath>
-            </text>
-          </svg>
-        </div>
+        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium py-10">
+          <Typewriter
+            words={["Contact"]}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={200}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+        </h1>
       </div>
 
       {/* Social Icons for mobile*/}

@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Space Grotesk"],
+        title: ["Roboto Mono"],
       },
       colors: {
-        "darkest-purple": "#F2E1FF",
-        "dark-purple": "#F8F3FF",
-        "my-gray": "#432206",
-        "med-purple": "#6D0A84",
+        "darkest-purple": "#F2E1FF", //light pink
+        "dark-purple": "#F8F3FF", // whitish pink
+        "my-gray": "#432206", // brown
+        "my-light": "#FAF6FF", // white
       },
     },
   },
