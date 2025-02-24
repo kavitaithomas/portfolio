@@ -81,7 +81,7 @@ const Contact = () => {
               className="p-2 w-full bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none"
             ></textarea>
             <div className="flex justify-center xl:justify-start">
-              <button className="text-my-gray text-lg font-semibold bg-darkest-purple border-2 border-my-gray px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-my-gray hover:text-darkest-purple">
+              <button className="text-my-gray text-lg font-semibold bg-my-yellow border-2 border-my-gray px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-my-gray hover:text-my-yellow">
                 Send
               </button>
             </div>

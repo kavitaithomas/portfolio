@@ -11,6 +11,7 @@ module.exports = {
         "dark-purple": "#F8F3FF", // whitish pink
         "my-gray": "#432206", // brown
         "my-light": "#FAF6FF", // white
+        "my-yellow": "#F2E5C1",
       },
     },
   },
