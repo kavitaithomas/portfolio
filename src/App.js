@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="bg-my-light min-h-screen overflow-x-hidden">
+    <div className="bg-my-gray min-h-screen overflow-x-hidden">
       <div className="mx-8 md:mx-16 lg:mx-36 max-w-full">
         <NavBar />
         <Hero />

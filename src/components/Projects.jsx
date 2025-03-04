@@ -71,7 +71,7 @@ const Projects = () => {
         name="projects"
         className="flex flex-col justify-center items-center md:my-10"
       >
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
+        <h1 className="text-darkest-purple text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["My Projects"]}
             loop={1}

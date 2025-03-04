@@ -47,7 +47,7 @@ const Experience = () => {
   return (
     <div>
       <div name="experience" className="flex flex-col items-center md:mt-10">
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
+        <h1 className="text-darkest-purple text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["Experience"]}
             loop={1}
@@ -69,13 +69,13 @@ const Experience = () => {
     ${
       activeIndex === index
         ? "bg-darkest-purple border-2 border-my-gray"
-        : "duration-700 border-b border-my-gray hover:border-2 hover:border-my-gray bg-darkest-purple"
+        : "duration-700 border-b border-white hover:border-2 hover:border-white bg-darkest-purple"
     }`}
             >
               {/* Left Section: Title and Place */}
               <div className="flex text-left space-x-2">
                 <span>{item.title}</span>
-                <div className="text-gray-400">
+                <div className="text-gray-700">
                   <span>{item.place}</span>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const Experience = () => {
             <div
               className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${
                 activeIndex === index ? "h-auto p-6" : "h-0"
-              } text-my-gray`}
+              } text-darkest-purple`}
             >
               {item.content1 && <p className="mb-4">{item.content1}</p>}
               {item.content2 && <p className="mb-4">{item.content2}</p>}

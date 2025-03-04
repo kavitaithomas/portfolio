@@ -9,7 +9,7 @@ const Contact = () => {
     <div name="contact" className="w-full pb-20">
       {/* Title */}
       <div className="w-full flex justify-center md:mt-10">
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
+        <h1 className="text-darkest-purple text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["Contact"]}
             loop={1}
@@ -31,7 +31,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex items-center hover:scale-105 duration-500"
           >
-            <AiFillLinkedin size={95} color="#241527" />
+            <AiFillLinkedin size={95} color="#F2E1FF" />
           </a>
           <a
             href="https://github.com/kavitaithomas"
@@ -39,7 +39,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex items-center hover:scale-105 duration-500"
           >
-            <FaGithub size={90} color="#241527" />
+            <FaGithub size={90} color="#F2E1FF" />
           </a>
           <a
             href="mailto:kavita.t@queensu.ca"
@@ -47,12 +47,12 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex items-center hover:scale-105 duration-500"
           >
-            <MdOutlineEmail size={95} color="#241527" />
+            <MdOutlineEmail size={95} color="#F2E1FF" />
           </a>
         </div>
       </div>
 
-      <p className="pb-4 text-my-gray text-xl font-medium text-center xl:text-left">
+      <p className="pb-4 text-darkest-purple text-xl font-medium text-center xl:text-left">
         Submit the form below to get in touch with me!
       </p>
 
@@ -65,23 +65,23 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="p-2 bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none xl:w-2/3"
+                className="p-2 bg-transparent border-2 border-darkest-purple rounded-md text-darkest-purple focus:outline-none xl:w-2/3"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Enter your e-mail"
-                className="p-2 bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none xl:w-2/3"
+                className="p-2 bg-transparent border-2 border-darkest-purple rounded-md text-darkest-purple focus:outline-none xl:w-2/3"
               />
             </div>
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
-              className="p-2 w-full bg-transparent border-2 border-my-gray rounded-md text-my-gray focus:outline-none"
+              className="p-2 w-full bg-transparent border-2 border-darkest-purple rounded-md text-darkest-purple focus:outline-none"
             ></textarea>
             <div className="flex justify-center xl:justify-start">
-              <button className="text-my-gray text-lg font-semibold bg-my-yellow border-2 border-my-gray px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-my-gray hover:text-my-yellow">
+              <button className="text-darkest-purple text-lg font-semibold bg-my-gray border-2 border-darkest-purple px-4 py-2 my-4 rounded-md hover:scale-105 duration-500 hover:bg-darkest-purple hover:text-my-gray">
                 Send
               </button>
             </div>
@@ -89,7 +89,7 @@ const Contact = () => {
         </div>
 
         {/* Social links for desktop */}
-        <div className="hidden xl:ms-16 text-my-gray xl:flex flex-col items-start xl:1/3 space-y-8">
+        <div className="hidden xl:ms-16 text-darkest-purple xl:flex flex-col items-start xl:1/3 space-y-8">
           <div className="flex items-center hover:scale-105 duration-500">
             <a
               href="https://www.linkedin.com/in/kavitaithomas"
@@ -97,7 +97,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <AiFillLinkedin size={90} color="#241527" />
+              <AiFillLinkedin size={90} color="#F2E1FF" />
               <p className="p-4 text-xl hidden md:block">Kavita Thomas</p>
             </a>
           </div>
@@ -108,7 +108,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <FaGithub size={85} color="#241527" />
+              <FaGithub size={85} color="#F2E1FF" />
               <p className="p-4 text-xl hidden md:block">kavitaithomas</p>
             </a>
           </div>
@@ -119,7 +119,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <MdOutlineEmail size={90} color="#241527" />
+              <MdOutlineEmail size={90} color="#F2E1FF" />
               <p className="p-4 text-xl hidden md:block">kavita.t@queensu.ca</p>
             </a>
           </div>

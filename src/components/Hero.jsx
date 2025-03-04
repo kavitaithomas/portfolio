@@ -15,7 +15,7 @@ const Hero = () => {
           className="w-72 md:w-96 lg:w-[400px] h-auto object-contain"
         />
         <div className="bg-white shadow-lg rounded-lg w-full max-w-lg md:max-w-xl lg:max-w-2xl">
-          <div className="flex items-center space-x-2 p-2 bg-gray-200 rounded-t-lg">
+          <div className="flex items-center space-x-2 p-2 bg-darkest-purple rounded-t-lg">
             <span className="w-3 h-3 bg-red-500 rounded-full"></span>
             <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
             <span className="w-3 h-3 bg-green-500 rounded-full"></span>

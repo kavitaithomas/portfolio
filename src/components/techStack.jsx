@@ -32,7 +32,7 @@ const TechStack = () => {
       id: 3,
       src: nextjs,
       title: "Next js",
-      style: "shadow-my-gray",
+      style: "shadow-white",
     },
     {
       id: 4,
@@ -74,13 +74,13 @@ const TechStack = () => {
       id: 10,
       src: bash,
       title: "Bash",
-      style: "shadow-my-gray",
+      style: "shadow-white",
     },
     {
       id: 11,
       src: github,
       title: "GitHub",
-      style: "shadow-my-gray",
+      style: "shadow-white",
     },
     {
       id: 12,
@@ -105,7 +105,7 @@ const TechStack = () => {
   return (
     <div>
       <div>
-        <div className="text-my-gray my-4 bg-darkest-purple p-4 rounded-lg text-xl">
+        <div className="text-darkest-purple my-4 p-4 rounded-lg text-xl">
           <p>
             These are technologies I have experience with. I am always finding
             different ways to apply my skills, and am currently focusing on
@@ -118,7 +118,7 @@ const TechStack = () => {
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`text-my-gray shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`text-darkest-purple shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="logo" className="w-10 lg:w-20 mx-auto" />
               <p className="mt-4 text-center">{title}</p>

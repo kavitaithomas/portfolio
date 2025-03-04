@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div name="aboutme">
       <div className="w-full flex flex-col items-center md:my-10">
-        <h1 className="text-my-gray text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
+        <h1 className="text-darkest-purple text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["About Me"]}
             loop={1}
@@ -30,7 +30,7 @@ const AboutMe = () => {
               <img
                 src={headshot}
                 alt="Kavita Thomas Headshot"
-                className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-50"
+                className="w-full h-full object-cover transition-opacity duration-300 border-4 border-darkest-purple group-hover:opacity-50"
               />
 
               {/* LinkedIn Icon - Appears on Hover */}
@@ -44,7 +44,7 @@ const AboutMe = () => {
             </a>
           </div>
 
-          <div className="text-my-gray text-lg sm:text-xl max-w-3xl leading-relaxed">
+          <div className="text-darkest-purple text-lg sm:text-xl max-w-3xl leading-relaxed">
             <p className="mb-4">
               I am a fourth-year Computing student graduating in Spring 2025
               from Queen’s University in Kingston, Ontario. I have a specific
