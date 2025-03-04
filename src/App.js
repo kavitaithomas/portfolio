@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
+import Hero2 from "./components/Hero2";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -13,7 +13,7 @@ function App() {
       <div className="mx-8 md:mx-16 lg:mx-36 max-w-full">
         <Stars />
         <NavBar />
-        <Hero />
+        <Hero2 />
         <AboutMe />
         <Projects />
         <TechStack />
