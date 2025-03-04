@@ -22,7 +22,7 @@ const Projects = () => {
       date: "June 2024 - Present",
       description:
         "Designed, developed and deployed a web app to market QWIC's resources, merchandise and events, resulting in an effective platform for sponsorship and community outreach. Next steps will be building an admin panel and backend using Docker, Prisma and PostgreSQL.",
-      type: "Full-stack Development",
+      type: "Design + Full-stack Development",
       technologies: [
         "Next.js",
         "Tailwind CSS",
@@ -42,7 +42,7 @@ const Projects = () => {
       date: "January - May 2024",
       description:
         "Led the design and collaborated for front-end development in a team of 5 for a 4-month development sprint working on a student club website. Effectively learned and implemented React.js, Tailwind CSS, and Git in a 4 month time frame.",
-      type: "Design and Front-end Development",
+      type: "Design + Front-end Development",
       technologies: ["Figma", "React.js", "Tailwind CSS"],
       image: qvsa,
       label1: "Design",
