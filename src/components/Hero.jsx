@@ -42,7 +42,7 @@ const Hero = () => {
 
       {/* Arrow Button */}
       <div className="absolute bottom-10 flex items-center justify-center text-my-gray rounded-3xl h-16 bg-darkest-purple lg:flex z-20">
-        <Link to="aboutme" spy={true} smooth={true} offset={-80} duration={500}>
+        <Link to="aboutme" spy={true} smooth={true} offset={-40} duration={500}>
           <IoIosArrowRoundDown size={50} className="animate-bounce mt-4" />
         </Link>
       </div>
