@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import qwic from "../assets/projects/qwic.png";
 import magazine from "../assets/projects/magazine.png";
 import qvsa from "../assets/projects/qvsa.png";
+import echolingo from "../assets/projects/echolingo.png";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
@@ -36,6 +37,22 @@ const Projects = () => {
       label2: "Code",
       link1: "https://qwic.org/",
       link2: "https://github.com/queens-wic/qwic",
+    },
+    {
+      title: "Echo-Lingo",
+      date: "HackHer 2025",
+      description:
+        "Developed a Text to Speech Chrome Extension to support auditory learners, ESL learners, and people living with visual impairments and reading disabilities.",
+      type: "Software Development",
+      technologies: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "SpeechSynthesis Web Speech API",
+      ],
+      image: echolingo,
+      label1: "Code",
+      link1: "https://github.com/kavitaithomas/Echo-Lingo",
     },
     {
       title: "Student Association Web App",
