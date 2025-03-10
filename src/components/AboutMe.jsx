@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 const AboutMe = () => {
   return (
     <div name="aboutme">
-      <div className="w-full flex flex-col items-center md:my-10">
+      <div className="w-full flex flex-col items-center md:my-10 bg-my-gray">
         <h1 className="text-darkest-purple text-5xl md:text-6xl font-title font-medium pt-16 pb-20">
           <Typewriter
             words={["About Me"]}
@@ -19,13 +19,13 @@ const AboutMe = () => {
           />
         </h1>
 
-        <div className="flex flex-col items-center xl:flex-row xl:space-x-24 justify-center w-full px-6">
+        <div className="flex flex-col items-center xl:flex-row xl:space-x-12 justify-between w-full px-6">
           <div className="flex justify-center">
             <a
               href="https://www.linkedin.com/in/kavitaithomas"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-80 h-80 rounded-xl border-4 border-my-gray overflow-hidden mb-8 xl:mb-0 group"
+              className="relative w-96 h-96 rounded-xl border-4 border-my-gray overflow-hidden mb-8 xl:mb-0 group"
             >
               <img
                 src={headshot}
@@ -44,7 +44,7 @@ const AboutMe = () => {
             </a>
           </div>
 
-          <div className="text-darkest-purple text-lg sm:text-xl max-w-3xl leading-relaxed">
+          <div className="text-darkest-purple text-lg sm:text-xl leading-relaxed">
             <p className="mb-4">
               I am a fourth-year Computing student graduating in Spring 2025
               from Queen’s University in Kingston, Ontario. I have a specific

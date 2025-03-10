@@ -42,7 +42,7 @@ const Projects = () => {
       title: "Echo-Lingo",
       date: "HackHer 2025",
       description:
-        "Developed a Text to Speech Chrome Extension to support auditory learners, ESL learners, and people living with visual impairments and reading disabilities.",
+        "A Text to Speech Chrome Extension to support auditory learners, ESL learners, and people living with visual impairments and reading disabilities. Developed in a team of 4 during a 12hr hackathon.",
       type: "Software Development",
       technologies: [
         "React",
@@ -101,7 +101,7 @@ const Projects = () => {
         </h1>
 
         {/* Project Cards */}
-        <div className="flex flex-col space-y-8 md:flex-row md:space-x-6 md:space-y-0">
+        <div className="flex flex-col space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

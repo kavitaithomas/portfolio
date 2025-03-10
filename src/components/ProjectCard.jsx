@@ -8,7 +8,7 @@ const ProjectCard = ({ project, isExpanded, onExpand }) => {
     <div
       onClick={onExpand}
       className={`rounded-2xl bg-darkest-purple border-2 border-my-gray p-2 cursor-pointer transition-all duration-500 ease-in-out hover:scale-105 ${
-        isExpanded ? "w-full" : "w-full md:w-1/3"
+        isExpanded ? "w-full" : "w-full"
       } flex flex-col ${isExpanded ? "overflow-visible" : "overflow-hidden"}`}
     >
       {/* Conditionally Render Content */}
@@ -27,7 +27,7 @@ const ProjectCard = ({ project, isExpanded, onExpand }) => {
           <p className="text-my-gray">{project.description}</p>
           <div>
             <h3 className="text-my-gray font-semibold">Technologies</h3>
-            <ul className="text-my-gray list-disc grid grid-cols-2 pl-4 gap-2 w-2/3">
+            <ul className="text-my-gray list-disc grid grid-cols-2 pl-4 gap-2">
               {project.technologies.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}
